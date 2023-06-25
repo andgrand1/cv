@@ -42,7 +42,7 @@ a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: cadetblue;
   
 }
 
@@ -65,13 +65,14 @@ div.gallery {
     border: 1px solid #ccc;
   }
   
-  div.gallery:hover {
+  img:hover {
     border: 1px solid #777;
+    transform: scale(1.2);
   }
   
   div.gallery img {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
   
   div.desc {
@@ -106,4 +107,20 @@ div.gallery {
     content: "";
     display: table;
     clear: both;
+  }
+
+  table, th, td {
+    border: 2px solid;
+    border-color: white;
+    border-collapse: collapse;
+    
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+
+  ol {
+    background-color: blue;
+    display: inline-block;
   }
